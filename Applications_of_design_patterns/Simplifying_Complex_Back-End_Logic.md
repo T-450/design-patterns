@@ -4,10 +4,10 @@
 
 In a multilayer architecture, accessing complex back-end logic from the presentation layer can be challenging due to:
 
-* Multiple classes retrieving data from different sources (e.g., databases, external services).
-* Auto-generated classes that are difficult to abstract.
-* Frequently updated complex classes requiring constant reference updates.
-* Expensive operations that need to be accessed frequently.
+- Multiple classes retrieving data from different sources (e.g., databases, external services).
+- Auto-generated classes that are difficult to abstract.
+- Frequently updated complex classes requiring constant reference updates.
+- Expensive operations that need to be accessed frequently.
 
 Directly using these complex classes from the presentation layer can lead to tight coupling, violate the dependency inversion principle, and make the system harder to maintain.
 
@@ -15,10 +15,10 @@ Directly using these complex classes from the presentation layer can lead to tig
 
 ### Facade
 
-* Provides a simplified interface to a set of complex objects.
-* Acts as a wrapper around several complex classes, encapsulating their interactions.
-* Shields other system components from direct interaction with complex logic.
-* Centralizes updates to the complex subsystem logic within the Facade object.
+- Provides a simplified interface to a set of complex objects.
+- Acts as a wrapper around several complex classes, encapsulating their interactions.
+- Shields other system components from direct interaction with complex logic.
+- Centralizes updates to the complex subsystem logic within the Facade object.
 
 ```plantuml
 @startuml
@@ -61,10 +61,10 @@ Facade -> SubsystemC: uses
 
 ### Proxy
 
-* Wraps a class with the same access interface, making them interchangeable.
-* Restricts access to the original class based on specific conditions or roles.
-* Implements preprocessing of requests before accessing the original class.
-* Suitable for optimizing access to data that rarely changes or is expensive to obtain.
+- Wraps a class with the same access interface, making them interchangeable.
+- Restricts access to the original class based on specific conditions or roles.
+- Implements preprocessing of requests before accessing the original class.
+- Suitable for optimizing access to data that rarely changes or is expensive to obtain.
 
 ```plantuml
 @startuml

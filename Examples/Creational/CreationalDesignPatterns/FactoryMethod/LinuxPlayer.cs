@@ -2,6 +2,10 @@
 
 namespace CreationalDesignPatterns.FactoryMethod
 {
+    /// <summary>
+    /// Concrete Factory object.
+    /// Represents an audio player for Linux systems.
+    /// </summary>
     internal class LinuxPlayer : Player
     {
         public override Task Play(string fileName)
@@ -15,6 +19,10 @@ namespace CreationalDesignPatterns.FactoryMethod
             return Task.CompletedTask;
         }
 
+        /// <summary>
+        /// Starts a Bash process with the specified command.
+        /// </summary>
+        /// <param name="command">The command to execute in the Bash process.</param>
         private void StartBashProcess(string command)
         {
             var escapedArgs = command.Replace("\"", "\\\"");

@@ -8,13 +8,13 @@ When constructing a structure where objects need to act as containers for simila
 
 ### Composite
 
-* Allows the building of tree-like structures efficiently.
-* Involves two types of classes: leaf class and composite class.
-* Both leaf and composite classes implement the same interface, but the composite class has additional methods.
-* A leaf class is the simplest class in the structure and cannot have additional members.
-* A composite class can contain a collection of members, including instances of both composite and leaf classes.
-* The composite class has methods to manipulate its children, such as Add and Remove.
-* Analogous to a file storage structure, where files are leaf objects and folders are composite objects.
+- Allows the building of tree-like structures efficiently.
+- Involves two types of classes: leaf class and composite class.
+- Both leaf and composite classes implement the same interface, but the composite class has additional methods.
+- A leaf class is the simplest class in the structure and cannot have additional members.
+- A composite class can contain a collection of members, including instances of both composite and leaf classes.
+- The composite class has methods to manipulate its children, such as Add and Remove.
+- Analogous to a file storage structure, where files are leaf objects and folders are composite objects.
 
 ```plantuml
 @startuml

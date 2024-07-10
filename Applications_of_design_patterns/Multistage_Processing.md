@@ -14,9 +14,9 @@ In such situations, we might want to short-circuit the flow as soon as we encoun
 
 ### Chain of Responsibility
 
-* The logic is arranged into a chain of individual components.
-* Each component has a condition that decides whether to move on to the next component or short-circuit the logic.
-* An example of this is the ASP.NET Core Middleware pipeline, which is designed for request validation.
+- The logic is arranged into a chain of individual components.
+- Each component has a condition that decides whether to move on to the next component or short-circuit the logic.
+- An example of this is the ASP.NET Core Middleware pipeline, which is designed for request validation.
 
 ```plantuml
 @startuml
@@ -49,10 +49,10 @@ ConcreteHandler1 o-> ConcreteHandler2
 
 ### Builder
 
-* Allows the building of an object step by step.
-* If a Builder implementation is put through a multistage conditional logic, it will have a different end product for each unique combination of conditions.
-* Unlike the Chain of Responsibility, Builder doesn't have to work with specific steps done in a specific order.
-* An example is the StringBuilder in C#, which allows arbitrary logic to be applied to build a string.
+- Allows the building of an object step by step.
+- If a Builder implementation is put through a multistage conditional logic, it will have a different end product for each unique combination of conditions.
+- Unlike the Chain of Responsibility, Builder doesn't have to work with specific steps done in a specific order.
+- An example is the StringBuilder in C#, which allows arbitrary logic to be applied to build a string.
 
 ```plantuml
 @startuml

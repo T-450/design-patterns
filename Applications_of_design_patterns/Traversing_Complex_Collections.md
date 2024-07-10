@@ -10,11 +10,11 @@ Regardless of the internal structure and algorithms used, the client class that 
 
 ### Iterator
 
-* The Iterator design pattern hides the implementation details of a collection-manipulating algorithm.
-* It exposes basic methods that enable any external object to work with the collection, such as `MoveNext()` and `HasMore()`.
-* From the client's perspective, the collection appears as sequential flat data, similar to an array, regardless of its actual internal structure.
-* Most modern programming languages have core libraries that provide a range of collection types with built-in iterators.
-* However, there may still be scenarios where we need to write a particular kind of collection ourselves, and this is where the Iterator pattern becomes very useful.
+- The Iterator design pattern hides the implementation details of a collection-manipulating algorithm.
+- It exposes basic methods that enable any external object to work with the collection, such as `MoveNext()` and `HasMore()`.
+- From the client's perspective, the collection appears as sequential flat data, similar to an array, regardless of its actual internal structure.
+- Most modern programming languages have core libraries that provide a range of collection types with built-in iterators.
+- However, there may still be scenarios where we need to write a particular kind of collection ourselves, and this is where the Iterator pattern becomes very useful.
 
 ```plantuml
 @startuml

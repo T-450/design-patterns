@@ -4,9 +4,9 @@
 
 When working with third-party libraries or legacy code, there may be situations where you need to modify or extend the functionality of existing components without changing their internal code. This could be due to:
 
-* Lack of access to the internal code of the components.
-* Restrictions on modifying the components.
-* Incompatibility between the external component and your codebase.
+- Lack of access to the internal code of the components.
+- Restrictions on modifying the components.
+- Incompatibility between the external component and your codebase.
 
 In these cases, you need a way to extend the behavior of the objects without directly modifying them.
 
@@ -14,10 +14,10 @@ In these cases, you need a way to extend the behavior of the objects without dir
 
 ### Decorator
 
-* Acts as a wrapper around the original object, similar to the Adapter design pattern.
-* Uses the same interface as the existing object, maintaining the original API.
-* Analogous to a hammer extension on a power drill: the original functionality remains intact while the extension adds new behavior.
-* Allows anything in the code that could previously use the original object to use the Decorator class in its place.
+- Acts as a wrapper around the original object, similar to the Adapter design pattern.
+- Uses the same interface as the existing object, maintaining the original API.
+- Analogous to a hammer extension on a power drill: the original functionality remains intact while the extension adds new behavior.
+- Allows anything in the code that could previously use the original object to use the Decorator class in its place.
 
 ```plantuml
 @startuml

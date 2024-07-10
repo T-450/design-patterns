@@ -12,14 +12,14 @@ The goal is to standardize the requests to simplify the system and improve code 
 
 ### Command
 
-* The request is embedded in the class that executes a particular action, known as a Command.
-* The Command class contains a single method, usually called `Execute()`.
-* None of the objects are responsible for generating the request; once a Command is created, it can be executed from any object.
-* The Command object has the sole responsibility of executing the action, while the calling objects only need to call its `Execute()` method.
-* A Command object can have complex data modification logic that can be altered by its input parameters.
-* Instead of having multiple pieces of similar update logic in the codebase, a single Command object can be slightly modified by the input parameters passed into it.
-* The `Execute()` method usually comes with no parameters (except for a cancellation token, if needed).
-* Unique values can be populated in the Command class by passing them into its constructor when the Command object is created.
+- The request is embedded in the class that executes a particular action, known as a Command.
+- The Command class contains a single method, usually called `Execute()`.
+- None of the objects are responsible for generating the request; once a Command is created, it can be executed from any object.
+- The Command object has the sole responsibility of executing the action, while the calling objects only need to call its `Execute()` method.
+- A Command object can have complex data modification logic that can be altered by its input parameters.
+- Instead of having multiple pieces of similar update logic in the codebase, a single Command object can be slightly modified by the input parameters passed into it.
+- The `Execute()` method usually comes with no parameters (except for a cancellation token, if needed).
+- Unique values can be populated in the Command class by passing them into its constructor when the Command object is created.
 
 ```plantuml
 @startuml

@@ -10,11 +10,11 @@ While we can create many similar methods to achieve this, design patterns offer 
 
 ### Template Method
 
-* The Template Method pattern is the simplest way of defining a family of related algorithms.
-* It leverages the object-oriented feature of inheritance.
-* We define either a skeleton method without implementation or a method with a default algorithm implementation in the base class.
-* We inherit from this class and modify the algorithm steps as needed.
-* This pattern is suitable for very similar algorithms. Significant alterations to the algorithm behavior might violate the Liskov substitution principle.
+- The Template Method pattern is the simplest way of defining a family of related algorithms.
+- It leverages the object-oriented feature of inheritance.
+- We define either a skeleton method without implementation or a method with a default algorithm implementation in the base class.
+- We inherit from this class and modify the algorithm steps as needed.
+- This pattern is suitable for very similar algorithms. Significant alterations to the algorithm behavior might violate the Liskov substitution principle.
 
 ```plantuml
 @startuml
@@ -41,11 +41,11 @@ AbstractClass <|-- ConcreteClass
 
 ### Visitor
 
-* The Visitor pattern allows us to separate algorithms from the objects they operate on.
-* We can add new behavior to an object without having to change the object itself.
-* The Visitor class operates on an object but is separate from it.
-* We can define different visitors to apply different algorithms to our object.
-* The Visitor class needs to be able to "visit" the object and access its accessible members.
+- The Visitor pattern allows us to separate algorithms from the objects they operate on.
+- We can add new behavior to an object without having to change the object itself.
+- The Visitor class operates on an object but is separate from it.
+- We can define different visitors to apply different algorithms to our object.
+- The Visitor class needs to be able to "visit" the object and access its accessible members.
 
 ```plantuml
 @startuml
@@ -87,9 +87,9 @@ Element <- Visitor
 
 ### State
 
-* The State pattern makes an object change its behavior when its internal state changes.
-* It can include state transition logic, allowing undo and redo actions.
-* The State pattern can be used in conjunction with the Memento pattern.
+- The State pattern makes an object change its behavior when its internal state changes.
+- It can include state transition logic, allowing undo and redo actions.
+- The State pattern can be used in conjunction with the Memento pattern.
 
 ```plantuml
 @startuml
@@ -125,9 +125,9 @@ State <|.. ConcreteStateB
 
 ### Strategy
 
-* The Strategy pattern is intended to be used inside a specific set of conditional logic.
-* It defines a series of related algorithms.
-* All strategy objects within the same set implement the same interface.
+- The Strategy pattern is intended to be used inside a specific set of conditional logic.
+- It defines a series of related algorithms.
+- All strategy objects within the same set implement the same interface.
 
 ```plantuml
 @startuml

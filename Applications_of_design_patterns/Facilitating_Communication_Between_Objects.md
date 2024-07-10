@@ -10,11 +10,11 @@ Connecting the components directly to each other can lead to excessively complex
 
 ### Mediator
 
-* A class that acts as a communication medium between objects when they don't have a way of communicating with each other directly.
-* Analogous to air traffic control, where airplanes don't communicate directly with each other, but rather through the control tower.
-* In the user interface example, the background layout itself can act as a mediator.
-* When any of the controls on the layout emits a specific type of event, the layout class decides whether this event is relevant to any other element and notifies that element accordingly.
-* The sole responsibility of deciding what to do with the event lies with the Mediator class.
+- A class that acts as a communication medium between objects when they don't have a way of communicating with each other directly.
+- Analogous to air traffic control, where airplanes don't communicate directly with each other, but rather through the control tower.
+- In the user interface example, the background layout itself can act as a mediator.
+- When any of the controls on the layout emits a specific type of event, the layout class decides whether this event is relevant to any other element and notifies that element accordingly.
+- The sole responsibility of deciding what to do with the event lies with the Mediator class.
 
 ```plantuml
 @startuml
@@ -50,11 +50,11 @@ ConcreteComponent2 --|> Component
 
 ### Observer
 
-* Utilizes the concept of publishing and subscribing.
-* Objects that emit a specific event are publishers, and objects that need to react to the event are subscribers.
-* An object can subscribe to specific event types or events with specific data values.
-* Subscriptions can be added or removed as needed.
-* An object can be both a publisher and a subscriber, and can handle multiple event types.
+- Utilizes the concept of publishing and subscribing.
+- Objects that emit a specific event are publishers, and objects that need to react to the event are subscribers.
+- An object can subscribe to specific event types or events with specific data values.
+- Subscriptions can be added or removed as needed.
+- An object can be both a publisher and a subscriber, and can handle multiple event types.
 
 ```plantuml
 @startuml
