@@ -148,7 +148,7 @@ Here's a categorized list of these problems and their corresponding design patte
 
 ## Examples
 
-Although implementations are not the focus of this repository, you can find C# versions in the [implementations directory](./implementations).
+All code samples in this repository are provided in C# using the .NET 6 template style.
 
 ## 🤝 Contributing
 
