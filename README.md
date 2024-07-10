@@ -12,7 +12,6 @@ This repository serves as both a learning guide and a reference source for desig
   - [Structural Patterns](#structural-patterns)
 - [Quick Reference](#quick-reference)
   - [Problems Solved by Design Patterns](#problems-solved-by-design-patterns)
-- [Examples](#examples)
 - [Contributing](#contributing)
 - [Resources](#resources)
 
@@ -160,10 +159,6 @@ Here's a categorized list of these problems and their corresponding design patte
     - **Strategy**: It's suitable when algorithms are selected by conditional logic.
 
 > Remember that design patterns are not a silver bullet and should be applied judiciously. Consider the specific requirements, constraints, and context of your problem before deciding on a design pattern. The goal is to use design patterns to improve code reusability, flexibility, and maintainability while solving the problem at hand effectively.
-
-## Examples
-
-All code samples in this repository are provided in C# using the .NET 6 template style.
 
 ## 🤝 Contributing
 
